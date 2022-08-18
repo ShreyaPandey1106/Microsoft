@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Navbar */
+nav{
+    
+    width: 100%;
+}
+.left{
+    padding: 1% 5% 1% 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.left-icons{
+    display: none;
+}
+#speacial{
+    display: none;
+}
+.left img{
+    height: 4vh;   
+}
+.list{
+    /* border: 2px solid red; */
+    width: 35%;
+    margin-left: 2%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.left a{
+    text-decoration: none;
+    font-size: smaller;
+    color: black;
+}
+.left a:hover{
+    border-bottom: 2px solid black;
+}
+.right{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.right-icons{
+    display: flex;
+    align-items: center;
+}
+.bi{
+    padding: 0px 6px 0px 6px;
+}
+.bi-person-circle{
+    font-size: xx-large;
+}
+/* Hero */
+
+.slider{
+    height: 90vh;
+    width: 100%;
+    background-image: url(./images/Hero.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+       padding-left: 15%;
+}
+.mview{ 
+    display: none;
+}
+.text{
+    width: 30%;
+    font-weight: lighter;
+}
+.text h1,p{
+    margin-bottom: 3%;
+}
+.text h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: xx-large;
+}
+.text button{
+    background-color: #0067B8;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+}
+.primary{
+    color: #0067B8;
+    text-decoration:none ;
+    font-weight: bolder;
+}
+/* Icon Section */
+.categories{
+    height: 30vh;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 5% 20% 5% 20%;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.category a{
+   color: #0067B8;    
+}
+
+/* Product Section */
+.products{
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    padding:0% 5% 0% 5%; 
+    margin:4% 0 4% 0;
+}
+.product{
+    width: 23%;
+    position: relative;
+}
+.product img{
+    width: 100%;
+}
+.product h1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.product p{
+        margin-bottom: 20px;
+}
+.yellow{
+    height: 25px;
+    width: 55px;
+    align-content: center;
+    text-align: center;
+    font-size: larger;
+    background-color: #ffb900;
+    position:absolute;
+    bottom: 50%;
+}
+/* Microsoft Edge*/
+.microedge{
+    padding:0% 5% 0% 5%; 
+    margin-bottom: 5%;
+}
+.edge-slider{
+    padding: 5%;
+    background-image: url(./images/microedge.jpg);
+}
+.microedge-text{
+    width: 40%;
+    padding: 5% ;
+    background-color: white;
+}
+/* Business-Product Section */
+.business{
+    padding:0% 5% 0% 5%; 
+}
+/* fOLLOW */
+.follow{
+    padding:0% 5% 0% 5%; 
+    width: 35%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.follow a{
+    font-size: x-large;
+}
+.bi{
+    color: black;
+}
+/* Back to top */
+
+.grey{
+    position: sticky;
+    bottom: 0;
+    left: 87%;
+    border: none;
+    background-color: rgb(188, 185, 185);
+    padding: 0.5%;
+    font-size: larger;
+}
+/* Footer */
+footer{
+    margin-top: 5%;
+    padding: 5%;
+    background-color: rgb(228, 223, 223);
+}
+.footer-lists{
+     display: flex;
+     justify-content: space-between;
+}
+.footer-list{
+    font-size: small;
+    color: #616161;
+    list-style: none;
+    width: fit-content;
+  display: flex;
+  flex-direction: column;
+  
+}
+.footer-list l{
+    margin-top: 10px;
+}
+.footer-list a{
+    text-decoration: none;
+    color: #616161;
+}
+.footer-list a:hover{
+    border-bottom: 2px solid black;
+}
+
+/* Media Querry */
+
+@media only screen and (max-width: 1080px) 
+{
+   /* Navbar */
+    .list{
+        width: 70%;
+    }
+  .void{
+    display: none;
+  }
+  #speacial{
+    display: inline;
+  }
+  /* Hero */
+  .dview{
+    display: none;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.slider{
+    height: 73vh; 
+    width: 100%;
+    background-size: cover;
+    background-position-x: 95% ;
+}
+.text{
+    width: 95%;
+}
+.mview{
+    padding-top: 10%;
+    padding-left: 10%;
+    width: 100%;
+    display: block;
+}
+  /* Product Section */
+  .products{
+    flex-wrap: wrap;
+  }
+  .product{
+    width: 45%;
+  }
+  /* Microsoft Edge */
+  .microedge{
+    padding: 0%;
+  }
+  .microedge-text{
+    padding: 2%;
+    
+  }
+  /* Business-Product Section */
+  .business{
+    margin:2% 4% 2% 4%;
+  }
+  /* Follow */
+  .follow{
+    width: 90%;
+    padding: 5%;
+  }
+  .grey{
+    margin-left: 5%;
+    position: static;
+    width: 90%;
+  }
+  /* Footer */
+  .footer-lists{
+    flex-wrap:wrap ;
+  }
+} 
+
+@media only screen and (max-width:768px){
+     /* Navbar */
+    .left{
+        width: 100%;
+        padding: 1% 2% 1% 2%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .right{
+        width: 20%;
+    }
+    .left-icons{
+        display: inline;
+    }
+    .remove {
+        display: none;
+    }
+  
+    /* Icons */
+    .categories{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px 20px 20px 20px;
+    }
+    .icon-1{
+        width: 100%;
+    }
+    .category{
+        margin: 3% 3% 3% 3%;
+    }
+    /* Product Section */
+    .products{
+        margin: 0% 0 10% 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product{
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .yellow{
+        bottom: 40%;
+    } 
+    /* Microsoft Edge */
+    .microedge{
+        padding: 0;
+    }
+    .edge-slider{
+        background-size: cover;
+        background-position-x: 50% ;
+    }
+    /* Business-Product Section */
+    .business{
+        margin-left: 7%;
+    }
+    /* Follow */
+  .follow{
+    padding: 10%;
+  }
+  .footer-lists{
+    flex-direction: column;
+  }
+  }
+
+
+   
+
+    
+    
+    
